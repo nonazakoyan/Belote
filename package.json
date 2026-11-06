@@ -1,0 +1,19 @@
+{
+  "name": "bazar-blot-bot",
+  "version": "0.1.0",
+  "description": "A bot for Armenian Bazar Blot that takes over a player's seat and picks the best legal move.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./engine": "./src/engine/match.js"
+  },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test",
+    "simulate": "node scripts/simulate.js",
+    "serve": "node src/server.js"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
